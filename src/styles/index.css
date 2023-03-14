@@ -1,14 +1,14 @@
 ::-webkit-scrollbar {
-	width: 0.5rem;
+	display: none;
 }
 ::-webkit-scrollbar-track {
-	background: transparent;
+	display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #888;
+	display: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	display: none;
 }

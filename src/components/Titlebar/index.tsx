@@ -1,11 +1,11 @@
 import { FC, useEffect, useState } from "react";
-import {
-	IoCloseOutline,
-	IoContractOutline,
-	IoExpandOutline,
-	IoRemove,
-} from "react-icons/io5";
-import Amethyst from "../../assets/amethyst.png";
+// import {
+// 	IoCloseOutline,
+// 	IoContractOutline,
+// 	IoExpandOutline,
+// 	IoRemove,
+// } from "react-icons/io5";
+import Amethyst from "../../assets/vinsin.png";
 
 const { getCurrentWindow, app } = window.require("@electron/remote");
 
@@ -38,7 +38,7 @@ export const Titlebar: FC = () => {
 				/>
 			</div>
 			<div className="app-name-container select-none">
-				<p>Electron React Tailwind Template</p>
+				<p  >Broadcast-chat-app</p>
 			</div>
 			<div className="window-controls-container">
 				<button
@@ -46,21 +46,24 @@ export const Titlebar: FC = () => {
 					className="minimize-button focus:outline-none hover:bg-gray-700"
 					onClick={onMinimize}
 				>
-					<IoRemove />
+					<div className="w-3 h-3 rounded-full bg-green-500"></div>
+					{/* <IoRemove /> */}
 				</button>
 				<button
 					title="Maximize"
 					className="min-max-button focus:outline-none hover:bg-gray-700"
 					onClick={onMaximize}
 				>
-					{maximized ? <IoContractOutline /> : <IoExpandOutline />}
+					<div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+					{/* {maximized ? <IoContractOutline /> : <IoExpandOutline />} */}
 				</button>
 				<button
 					title="Close"
 					className="close-button focus:outline-none hover:bg-gray-700"
 					onClick={onQuit}
 				>
-					<IoCloseOutline />
+					<div className="w-3 h-3 rounded-full bg-red-500"></div>
+					{/* <IoCloseOutline /> */}
 				</button>
 			</div>
 		</div>

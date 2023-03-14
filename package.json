@@ -1,17 +1,17 @@
 {
-	"name": "electron-react-tailwind-template",
+	"name": "Broadcast-chat",
 	"author": {
-		"email": "demirci.baris38@gmail.com",
-		"name": "Barış DEMİRCİ",
-		"url": "https://338.rocks"
+		"email": "vinsin2002@gmail.com",
+		"name": "Vinayak Sinha",
+		"url": "https://vinayaksinha.netlify.app"
 	},
-	"description": "Electron app template with React and Tailwind CSS",
+	"description": "Broadcast chat app using web sockets",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/barbarbar338/electron-react-tailwind-template"
+		"url": "https://github.com/vinsin2002/Broadcast-chat.git"
 	},
 	"license": "GPL-3.0",
-	"version": "1.0.1",
+	"version": "1",
 	"private": true,
 	"devDependencies": {
 		"@types/node": "^18.11.10",
