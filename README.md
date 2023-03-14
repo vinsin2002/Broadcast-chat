@@ -23,3 +23,4 @@ Feel free to use GitHub's features.
 # 📄 Copyrights
 
 Copyrights for `public/favicon.ico`, `public/icon.ico` and `public/icon.png` are owned by [Brawlhalla, Blue Mammoth Games](https://www.brawlhalla.com/)
+# Broadcast-chat
