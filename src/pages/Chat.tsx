@@ -1,11 +1,20 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import { Layout } from "../components/Layout";
 import { useLocation } from "react-router-dom";
+import { io } from "socket.io-client";
+const socket = io('http://localhost:3001');
 export const ChatPage: FC = () => {
+
     type Message = { msg: string, sender: string };
     const [messageq, setmessageq] = useState<Message[]>([]);
     const {state} = useLocation();
-    const { id } = state;
+    const { id } = state; 
+    useEffect(() => {
+      socket.on("receieve_message",(data)=>{
+        setmessageq([...messageq,{msg:data.message,sender: data.name}])
+      })
+    }, [socket])
+        
     function submithandler(event: React.FormEvent<HTMLFormElement>)
 	{
 		event.preventDefault();
@@ -14,6 +23,7 @@ export const ChatPage: FC = () => {
 			textmessage: {value: string}
 		  }
         setmessageq([...messageq,{msg:formElements.textmessage.value,sender: id}])
+        socket.emit("send_message",{message: formElements.textmessage.value,name: id});
         formElements.textmessage.value = "";
 	}
 	return (

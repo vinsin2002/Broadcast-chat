@@ -33,6 +33,7 @@
 	},
 	"dependencies": {
 		"@electron/remote": "^2.0.8",
+		"@types/socket.io-client": "^3.0.0",
 		"auto-launch": "^5.0.5",
 		"electron-is-dev": "^2.0.0",
 		"electron-reloader": "^1.2.3",
@@ -42,7 +43,8 @@
 		"react-icons": "^4.7.1",
 		"react-router-dom": "^6.4.4",
 		"react-toastify": "^9.1.1",
-		"react-use": "^17.4.0"
+		"react-use": "^17.4.0",
+		"socket.io-client": "^4.6.1"
 	},
 	"homepage": "./",
 	"main": "public/electron.js",
@@ -50,8 +52,8 @@
 		"prebuild": "rimraf build && rimraf dist",
 		"react:build": "react-scripts build",
 		"react:dev": "cross-env BROWSER=none react-scripts start",
-		"electron:build": "electron-builder build --win --publish never",
-		"electron:deploy": "electron-builder build --win --publish always",
+		"electron:build": "electron-builder build --linux --publish never",
+		"electron:deploy": "electron-builder build --linux --publish always",
 		"electron:dev": "electron .",
 		"build": "npm run react:build && npm run electron:build",
 		"deploy": "npm run react:build && npm run electron:deploy",
