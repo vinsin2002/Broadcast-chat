@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect } from "react";
 // import {
 // 	IoCloseOutline,
 // 	IoContractOutline,
@@ -11,7 +11,6 @@ const { getCurrentWindow, app } = window.require("@electron/remote");
 
 export const Titlebar: FC = () => {
 	const currentWindow = getCurrentWindow();
-	const [maximized, setMaximized] = useState(currentWindow.isMaximized());
 
 	useEffect(() => {
 		const icon = document.getElementById("icon") as HTMLElement;
@@ -20,7 +19,6 @@ export const Titlebar: FC = () => {
 
 	const onMinimize = () => currentWindow.minimize();
 	const onMaximize = () => {
-		setMaximized(!currentWindow.isMaximized());
 		currentWindow.isMaximized()
 			? currentWindow.unmaximize()
 			: currentWindow.maximize();
