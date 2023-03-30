@@ -1,26 +1,19 @@
-# ⚛ Electron - React - TailwindCSS Template With Router
+# Project Name
 
-A very simple and functional template for you to use Electron, React and TailwindCSS together.
+A cross-platform desktop app built with Electron.js, Tailwind CSS and React.js. The app allows users to broadcast messages and share images with other devices on the same network in real-time using Socket.io.
 
-# 🎀 Features
+## Getting Started
 
--   Use React for creating interfaces
--   Use `react-router-dom` for routing
--   Use TailwindCSS for styling
--   Basic functions are ready to use such as creating tray icon, creating notifications etc.
+To start the application on a development server:
 
-# 🤓 Insatllation
+1. Install the required node modules by running `npm start`.
+2. Start the React server by running `npm react:dev`.
+3. Start the Electron development server by running `npm electron:dev`.
 
--   Clone repo
--   Run `npm install` or `yarn`
--   Run `npm run dev` or `yarn dev` to start development server
--   Run `npm run build` or `yarn build` to create executable
+## Contributing
 
-# 🧦 Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
 
-Feel free to use GitHub's features.
+## License
 
-# 📄 Copyrights
-
-Copyrights for `public/favicon.ico`, `public/icon.ico` and `public/icon.png` are owned by [Brawlhalla, Blue Mammoth Games](https://www.brawlhalla.com/)
-# Broadcast-chat
+[MIT](LICENSE)
