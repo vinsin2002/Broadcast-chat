@@ -1,4 +1,4 @@
-# Project Name
+# Broadcast-chat-app
 
 A cross-platform desktop app built with Electron.js, Tailwind CSS and React.js. The app allows users to broadcast messages and share images with other devices on the same network in real-time using Socket.io.
 
