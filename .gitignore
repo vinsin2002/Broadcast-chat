@@ -24,3 +24,5 @@
 /Client/dist
 
 /Client/electron-builder.yaml
+
+/Server/node_modules
