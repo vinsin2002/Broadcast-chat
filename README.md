@@ -8,18 +8,27 @@ messages to other users on the network.
 • Built a robust backend Node.js server with Express.js, CORS, and Socket.IO to handle incoming messages and 
 broadcast them to all other users on the network.
 
+Below you can find working screenshots of the project
+
 ## Getting Started
 
-To start the application on a development server:
+To start the Client application on a development server :
 
+1. ```cd Client```
+2.  Install the node dependencies ```npm install```
 1. Install the required node modules by running `npm start`.
 2. Start the React server by running `npm react:dev`.
 3. Start the Electron development server by running `npm electron:dev`.
+4. Once everything seems perfect we can build the production version using ``` npm run build ``` the installation file will be reflected in ```/Client/dist``` by default this would be an application native to the operating system it was built from
 
-## Contributing
+To Start the background chat server :
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
+1. ```cd Server```
+2. Install the node dependencies ```npm install```
+3. Run the server with ```npm start```
 
-## License
+## Screenshots
 
-[MIT](LICENSE)
+![](./.screenshots/ss2.png)
+![](./.screenshots/ss3.png)
+![](./.screenshots/ss4.png)
