@@ -22,7 +22,11 @@
 /Client/yarn-debug.log*
 /Client/yarn-error.log*
 /Client/dist
+/Client/*-ngram.json
 
 /Client/electron-builder.yaml
 
 /Server/node_modules
+/Server/summarizer-broadcast-model
+/Server/summarizer-broadcast-tokenizer
+/Server/venv

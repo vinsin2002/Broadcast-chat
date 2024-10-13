@@ -7,7 +7,6 @@ const { showNotification } = require("./utils/showNotification");
 const AutoLaunch = require("auto-launch");
 const remote = require("@electron/remote/main");
 const config = require("./utils/config");
-
 if (config.isDev) require("electron-reloader")(module);
 
 remote.initialize();

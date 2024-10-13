@@ -30,11 +30,9 @@ exports.createMainWindow = async () => {
 	window.once("ready-to-show", () => {
 		autoUpdater.checkForUpdatesAndNotify();
 	});
-
 	window.on("close", (e) => {
 		if (!config.isQuiting) {
 			e.preventDefault();
-
 			window.hide();
 		}
 	});
